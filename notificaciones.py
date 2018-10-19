@@ -1,39 +1,43 @@
+#!/usr/bin/env python3.7
+# -*- coding: utf-8 -*- #
+
 import os, json, requests, logging, unidecode, time, re, configparser
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from datetime import datetime, timedelta
 from slackclient import SlackClient
 from flask import Flask, request, abort, jsonify
 from flask_basicauth import BasicAuth
-from modulos.decrypt import decrypt
+from modulos.decrypt import desencripta
 
 config = configparser.ConfigParser()
 config.read("configuracion.ini")
 
-usuario_hd = config["HELPDESK"]["usuario_hd"]
-clave_hd = config["HELPDESK"]["clave_hd"]
-server_db = config["HELPDESK"]["server_db"]
-usuario_db = config["HELPDESK"]["usuario_db"]
-clave_db = config["HELPDESK"]["clave_db"]
-dominio_helpdesk = config["HELPDESK"]["dominio_helpdesk"]
-database_helpdesk = config["HELPDESK"]["database"]
-api_ldap_server_url = config["API"]["ldap_url"]
-api_ldap_server_port = config["API"]["ldap_port"]
-api_helpdesk_url = config["API"]["helpdeskV1_url"]
-apiv2_helpdesk_url = config["API"]["helpdeskV2_url"]
-api_helpdesk_url_authenticate = config["API"]["helpdesk_authenticate"]
-dialogflow_token = config["TOKENS"]["dialogflow_token"]
-slack_bot_token = config["TOKENS"]["slack_bot_token"]
-dialogflow_project = config["TOKENS"]["dialogflow_project"]
-main_token = config["TOKENS"]["main_token"]
+usuario_hd = str(config["HELPDESK"]["usuario_hd"])
+clave_hd = str(config["HELPDESK"]["clave_hd"])
+server_db = str(config["HELPDESK"]["server_db"])
+usuario_db = str(config["HELPDESK"]["usuario_db"])
+clave_db = str(config["HELPDESK"]["clave_db"])
+dominio_helpdesk = str(config["HELPDESK"]["dominio_helpdesk"])
+database_helpdesk = str(config["HELPDESK"]["database"])
+api_ldap_server_url = str(config["API"]["ldap_url"])
+api_ldap_server_port = str(config["API"]["ldap_port"])
+api_helpdesk_url = str(config["API"]["helpdeskV1_url"])
+apiv2_helpdesk_url = str(config["API"]["helpdeskV2_url"])
+api_helpdesk_url_authenticate = str(config["API"]["helpdesk_authenticate"])
+edialogflow_token = str(config["TOKENS"]["dialogflow_token"])
+eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
+dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
+main_token = str(config["TOKENS"]["main_token"])
 
-slack_bot_token = decrypt(main_token, slack_bot_token)
+slack_bot_token = desencripta(main_token, eslack_bot_token)
+dialogflow_token = desencripta(main_token, edialogflow_token)
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
 # starterbot's user ID in Slack: value is assigned after the bot starts up
 # starterbot_id = None
 
-logging.basicConfig(filename='notificaciones.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='logs/notificaciones.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Faveo Notifiaciones Iniciando....')
 
 # constants
