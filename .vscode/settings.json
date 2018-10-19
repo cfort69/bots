@@ -1,7 +1,9 @@
 {
-    "python.pythonPath": "/Users/cfort/Documents/Python Projects/bin/python3.7",
+    "python.pythonPath": "/Users/charlesfort/Documents/Python Projects/bin/python3",
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": false,
     "python.linting.enabled": true,
-    "python.linting.pydocstyleEnabled": true
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pylamaEnabled": true,
+    "python.venvPath": "~/Documents/Python Projects/bin/"
 }

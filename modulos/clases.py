@@ -1,4 +1,4 @@
-import requests, json, logging, unidecode, MySQLdb, MySQLdb.cursors, configparser
+import requests, json, logging, unidecode, pymysql, pymysql.cursors, configparser
 import dialogflow_v2 as dialogflow
 from google.protobuf import struct_pb2
 

@@ -1,15 +1,33 @@
-import os
-import json
-import unidecode
-import time
-import re, sys
-import requests, logging
+#!/usr/bin/env python3.7
+# -*- coding: utf-8 -*- #
+
+import os, json, unidecode, time, re, sys, requests, logging, configparser
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from datetime import datetime, timedelta
-from modulos.configuracion import usuario_hd, clave_hd, server_db, usuario_db, clave_db, database_helpdesk, api_ldap_server_url, \
-    api_ldap_server_port, id_whatsapp_soporte ,dominio_helpdesk, api_helpdesk_url, apiv2_helpdesk_url, api_helpdesk_url_authenticate, \
-    dialogflow_token, slack_bot_token,dialogflow_project, dialogflow_token
+# from modulos.configuracion import usuario_hd, clave_hd, server_db, usuario_db, clave_db, database_helpdesk, api_ldap_server_url, \
+#     api_ldap_server_port, id_whatsapp_soporte ,dominio_helpdesk, api_helpdesk_url, apiv2_helpdesk_url, api_helpdesk_url_authenticate, \
+#     dialogflow_token, slack_bot_token,dialogflow_project, dialogflow_token
 from slackclient import SlackClient
+
+config = configparser.ConfigParser()
+config.read("configuracion.ini")
+
+usuario_hd = config["HELPDESK"]["usuario_hd"]
+clave_hd = config["HELPDESK"]["clave_hd"]
+server_db = config["HELPDESK"]["server_db"]
+usuario_db = config["HELPDESK"]["usuario_db"]
+clave_db = config["HELPDESK"]["clave_db"]
+dominio_helpdesk = config["HELPDESK"]["dominio_helpdesk"]
+database_helpdesk = config["HELPDESK"]["database"]
+api_ldap_server_url = config["API"]["ldap_url"]
+api_ldap_server_port = config["API"]["ldap_port"]
+api_helpdesk_url = config["API"]["helpdeskV1_url"]
+apiv2_helpdesk_url = config["API"]["helpdeskV2_url"]
+api_helpdesk_url_authenticate = config["API"]["helpdesk_authenticate"]
+dialogflow_token = config["TOKENS"]["dialogflow_token"]
+slack_bot_token = config["TOKENS"]["slack_bot_token"]
+dialogflow_project = config["TOKENS"]["dialogflow_project"]
+
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
@@ -30,11 +48,6 @@ MENTION_REGEX = "^<@(|[WU].+?)>(.*)"
 
 
 def parse_bot_commands(slack_events, usuarios):
-    """
-        Parses a list of events coming from the Slack RTM API to find bot commands.
-        If a bot command is found, this function returns a tuple of command and channel.
-        If its not found, then this function returns None, None.
-    """
     for event in slack_events:
         if event["type"] == "message" and not "subtype" in event:
             # user_id, message = parse_direct_mention(event["text"])

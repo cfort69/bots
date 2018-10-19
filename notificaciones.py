@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from slackclient import SlackClient
 from flask import Flask, request, abort, jsonify
 from flask_basicauth import BasicAuth
+from modulos.decrypt import decrypt
 
 config = configparser.ConfigParser()
 config.read("configuracion.ini")
@@ -23,6 +24,9 @@ api_helpdesk_url_authenticate = config["API"]["helpdesk_authenticate"]
 dialogflow_token = config["TOKENS"]["dialogflow_token"]
 slack_bot_token = config["TOKENS"]["slack_bot_token"]
 dialogflow_project = config["TOKENS"]["dialogflow_project"]
+main_token = config["TOKENS"]["main_token"]
+
+slack_bot_token = decrypt(main_token, slack_bot_token)
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)

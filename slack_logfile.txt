@@ -1,1 +1,33 @@
 2018-10-16 16:50:17,669 - INFO - Botler Slack Iniciando....
+2018-10-17 12:34:11,276 - INFO - Botler Slack Iniciando....
+2018-10-17 12:34:11,634 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+2018-10-17 12:36:25,640 - INFO - Botler Slack Iniciando....
+2018-10-17 12:36:26,242 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+2018-10-17 12:38:01,487 - INFO - Botler Slack Iniciando....
+2018-10-17 12:38:01,880 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+2018-10-17 12:43:20,159 - INFO - Botler Slack Iniciando....
+2018-10-17 12:43:20,636 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/cfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
