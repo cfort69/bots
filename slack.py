@@ -30,7 +30,6 @@ main_token = str(config["TOKENS"]["main_token"])
 slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
 dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
 
-print(slack_bot_token)
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
@@ -108,7 +107,7 @@ def handle_command(mensaje, channel, email, nombre, apellido):
 
 if __name__ == "__main__":
     if slack_client.rtm_connect(with_team_state=False):
-        print("Starter Bot connected and running!")
+        print("Botler Conectado!")
         # Read bot's user ID by calling Web API method `auth.test`
         starterbot_id = slack_client.api_call("auth.test")["user_id"]
         usuarios = slack_client.api_call("users.list")
@@ -120,5 +119,5 @@ if __name__ == "__main__":
                 handle_command(mensaje, channel, email, nombre, apellido)
             time.sleep(RTM_READ_DELAY)
     else:
-        print("Connection failed. Exception traceback printed above.")
+        print("Error de coneccion.")
 
