@@ -154,3 +154,4 @@ Traceback (most recent call last):
   File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
     raise SlackConnectionError(message=str(e))
 slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+2018-10-21 10:39:28,208 - INFO - Botler Slack Iniciando....

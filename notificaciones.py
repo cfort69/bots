@@ -29,8 +29,8 @@ eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
 dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
 main_token = str(config["TOKENS"]["main_token"])
 
-slack_bot_token = desencripta(main_token, eslack_bot_token)
-dialogflow_token = desencripta(main_token, edialogflow_token)
+slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
+dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
