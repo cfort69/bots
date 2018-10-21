@@ -27,8 +27,10 @@ eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
 dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
 main_token = str(config["TOKENS"]["main_token"])
 
-slack_bot_token = desencripta(main_token, eslack_bot_token)
-dialogflow_token = desencripta(main_token, edialogflow_token)
+slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
+dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
+
+print(slack_bot_token)
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
@@ -69,18 +71,12 @@ def parse_bot_commands(slack_events, usuarios):
     return None, None, None, None,None, None,None, None
 
 def parse_direct_mention(message_text):
-    """
-        Finds a direct mention (a mention that is at the beginning) in message text
-        and returns the user ID which was mentioned. If there is no direct mention, returns None
-    """
     matches = re.search(MENTION_REGEX, message_text)
     # the first group contains the username, the second group contains the remaining message
     return (matches.group(1), matches.group(2).strip()) if matches else (None, None)
 
 def handle_command(mensaje, channel, email, nombre, apellido):
-    """
-        Executes bot command if the command is known
-    """
+
     # Default response is help text for the user
     # default_response = "Not sure what you mean. Try *{}*.".format(EXAMPLE_COMMAND)
 

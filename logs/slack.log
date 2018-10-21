@@ -1,0 +1,156 @@
+2018-10-21 09:44:55,600 - INFO - Botler Slack Iniciando....
+2018-10-21 09:44:56,109 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+2018-10-21 09:46:45,900 - INFO - Botler Slack Iniciando....
+2018-10-21 09:46:46,381 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+2018-10-21 09:52:26,095 - INFO - Botler Slack Iniciando....
+2018-10-21 09:52:26,651 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 163, in rtm_connect
+    raise SlackLoginError(reply=reply)
+slackclient.server.SlackLoginError
+2018-10-21 09:55:31,983 - INFO - Botler Slack Iniciando....
+2018-10-21 09:55:32,861 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 850, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1108, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+2018-10-21 10:09:51,038 - INFO - Botler Slack Iniciando....
+2018-10-21 10:09:51,828 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 850, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1108, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+2018-10-21 10:12:51,611 - INFO - Botler Slack Iniciando....
+2018-10-21 10:12:52,475 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 850, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1108, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+2018-10-21 10:22:51,991 - INFO - Botler Slack Iniciando....
+2018-10-21 10:22:52,899 - WARNING - Failed RTM connect
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 192, in connect_slack_websocket
+    http_proxy_auth=proxy_auth,
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 502, in create_connection
+    websock.connect(url, **options)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_core.py", line 219, in connect
+    options.pop('socket', None))
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 126, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 253, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/websocket/_http.py", line 232, in _wrap_sni_socket
+    server_hostname=hostname,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 850, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1108, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/client.py", line 140, in rtm_connect
+    self.server.rtm_connect(use_rtm_start=with_team_state, **kwargs)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 159, in rtm_connect
+    self.connect_slack_websocket(self.ws_url)
+  File "/Users/charlesfort/Documents/Python Projects/lib/python3.7/site-packages/slackclient/server.py", line 200, in connect_slack_websocket
+    raise SlackConnectionError(message=str(e))
+slackclient.server.SlackConnectionError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)
