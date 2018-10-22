@@ -3,50 +3,42 @@
 
 import os, json, unidecode, time, re, sys, requests, logging, configparser
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
-from datetime import datetime, timedelta
+from modulos.funciones import encrypt, decrypt
 from slackclient import SlackClient
-from modulos.decrypt import desencripta
 
 config = configparser.ConfigParser()
 config.read("configuracion.ini")
 
-usuario_hd = str(config["HELPDESK"]["usuario_hd"])
-clave_hd = str(config["HELPDESK"]["clave_hd"])
-server_db = str(config["HELPDESK"]["server_db"])
-usuario_db = str(config["HELPDESK"]["usuario_db"])
-clave_db = str(config["HELPDESK"]["clave_db"])
-dominio_helpdesk = str(config["HELPDESK"]["dominio_helpdesk"])
-database_helpdesk = str(config["HELPDESK"]["database"])
-api_ldap_server_url = str(config["API"]["ldap_url"])
-api_ldap_server_port = str(config["API"]["ldap_port"])
-api_helpdesk_url = str(config["API"]["helpdeskV1_url"])
-apiv2_helpdesk_url = str(config["API"]["helpdeskV2_url"])
-api_helpdesk_url_authenticate = str(config["API"]["helpdesk_authenticate"])
-edialogflow_token = str(config["TOKENS"]["dialogflow_token"])
-eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
-dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
-main_token = str(config["TOKENS"]["main_token"])
+usuario_hd = config["HELPDESK"]["usuario_hd"]
+clave_hd = config["HELPDESK"]["clave_hd"]
+server_db = config["HELPDESK"]["server_db"]
+usuario_db = config["HELPDESK"]["usuario_db"]
+clave_db = config["HELPDESK"]["clave_db"]
+dominio_helpdesk = config["HELPDESK"]["dominio_helpdesk"]
+database_helpdesk = config["HELPDESK"]["database"]
+api_ldap_server_url = config["API"]["ldap_url"]
+api_ldap_server_port = config["API"]["ldap_port"]
+api_helpdesk_url = config["API"]["helpdeskV1_url"]
+apiv2_helpdesk_url = config["API"]["helpdeskV2_url"]
+api_helpdesk_url_authenticate = config["API"]["helpdesk_authenticate"]
+dialogflow_token = config["TOKENS"]["dialogflow_token"]
+slack_bot_token = config["TOKENS"]["slack_bot_token"]
+dialogflow_project = config["TOKENS"]["dialogflow_project"]
 
-slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
-dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
 # starterbot's user ID in Slack: value is assigned after the bot starts up
 starterbot_id = None
 
-logging.basicConfig(filename='logs/slack.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='slack_logfile.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Botler Slack Iniciando....')
 
-# cHelpDesk = helpdesk(server=server_helpdesk,usuario=usuario_helpdesk,clave=clave_helpdesk,database=database_helpdesk, dominio=dominio_helpdesk)
-# cLdap = ldap(server=api_ldap_server_url,port=api_ldap_server_port)
 cBotDialogflow = botdialogflow(project_id=dialogflow_project, idioma='es')
 
-# constants
 RTM_READ_DELAY = 1 # 1 second delay between reading from RTM
 EXAMPLE_COMMAND = "do"
 MENTION_REGEX = "^<@(|[WU].+?)>(.*)"
-
 
 def parse_bot_commands(slack_events, usuarios):
     for event in slack_events:
@@ -69,12 +61,18 @@ def parse_bot_commands(slack_events, usuarios):
     return None, None, None, None,None, None,None, None
 
 def parse_direct_mention(message_text):
+    """
+        Finds a direct mention (a mention that is at the beginning) in message text
+        and returns the user ID which was mentioned. If there is no direct mention, returns None
+    """
     matches = re.search(MENTION_REGEX, message_text)
     # the first group contains the username, the second group contains the remaining message
     return (matches.group(1), matches.group(2).strip()) if matches else (None, None)
 
 def handle_command(mensaje, channel, email, nombre, apellido):
-
+    """
+        Executes bot command if the command is known
+    """
     # Default response is help text for the user
     # default_response = "Not sure what you mean. Try *{}*.".format(EXAMPLE_COMMAND)
 
@@ -106,7 +104,7 @@ def handle_command(mensaje, channel, email, nombre, apellido):
 
 if __name__ == "__main__":
     if slack_client.rtm_connect(with_team_state=False):
-        print("Botler Conectado!")
+        print("Starter Bot connected and running!")
         # Read bot's user ID by calling Web API method `auth.test`
         starterbot_id = slack_client.api_call("auth.test")["user_id"]
         usuarios = slack_client.api_call("users.list")
@@ -118,5 +116,5 @@ if __name__ == "__main__":
                 handle_command(mensaje, channel, email, nombre, apellido)
             time.sleep(RTM_READ_DELAY)
     else:
-        print("Error de coneccion.")
+        print("Connection failed. Exception traceback printed above.")
 
