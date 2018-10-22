@@ -162,7 +162,7 @@ class helpdesk_db: ## clase para hacer todas las consultas en db del helpdesk ##
 
     def abreConeccion(self):
         if(self.conn is None):
-            coneccion = MySQLdb.Connect(host=self.server_db, user=self.usuario_db,passwd=self.clave_db, db=self.database,compress=1,cursorclass=MySQLdb.cursors.DictCursor)
+            coneccion = pymysql.Connect(host=self.server_db, user=self.usuario_db,passwd=self.clave_db, db=self.database,compress=1,cursorclass=pymysql.cursors.DictCursor)
             return coneccion
         # elif (not self.conn.open):
         #     coneccion = MySQLdb.Connect(host=self.server, user=self.usuario,passwd=self.clave, db=self.database,compress=1,cursorclass=MySQLdb.cursors.DictCursor)            
