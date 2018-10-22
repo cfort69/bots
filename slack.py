@@ -5,6 +5,7 @@ import os, json, unidecode, time, re, sys, requests, logging, configparser
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from modulos.funciones import encrypt, decrypt
 from slackclient import SlackClient
+from modulos.decrypt import desencripta
 
 config = configparser.ConfigParser()
 config.read("configuracion.ini")
@@ -25,6 +26,8 @@ dialogflow_token = config["TOKENS"]["dialogflow_token"]
 slack_bot_token = config["TOKENS"]["slack_bot_token"]
 dialogflow_project = config["TOKENS"]["dialogflow_project"]
 
+slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
+dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
