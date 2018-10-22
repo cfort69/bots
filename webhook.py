@@ -22,6 +22,13 @@ api_ldap_server_port = str(config["API"]["ldap_port"])
 api_helpdesk_url = str(config["API"]["helpdeskV1_url"])
 apiv2_helpdesk_url = str(config["API"]["helpdeskV2_url"])
 api_helpdesk_url_authenticate = str(config["API"]["helpdesk_authenticate"])
+edialogflow_token = str(config["TOKENS"]["dialogflow_token"])
+eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
+dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
+main_token = str(config["TOKENS"]["main_token"])
+
+slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
+dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
 
 logging.basicConfig(filename='logs/webhook.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
