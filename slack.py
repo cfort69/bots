@@ -86,7 +86,7 @@ def handle_command(mensaje, channel, email, nombre, apellido):
     # texto = mensaje.encode('utf-8') + " " + email.encode('utf-8')
     # usuario = email.find("@")
     # texto = mensaje + " " + email
-    print(mensaje)
+    # print(mensaje)
 
     logging.info('Mensaje recibido de :{}'.format(channel) + ' {}'.format(mensaje))
 

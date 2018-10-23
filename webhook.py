@@ -88,16 +88,11 @@ def webhook():
         item = ""
         contexto = False
         usuario = ""
-        # print(solicitud)
-
-        # result = handle(g.data)
-        # dataDict = json.loads(solicitud)
-        # print(request.headers.get('content-type'))
-
 
         solicitud = request.json
+        respuesta = solicitud["queryResult"]["fulfillmentText"]
 
-        # print(json.dumps(solicitud, indent=4, sort_keys=True))
+        print(json.dumps(solicitud, indent=4, sort_keys=True))
 
         # parametro = solicitud["queryResult"]["action"]
         if "outputContexts" in solicitud["queryResult"]: contexto = True
@@ -137,14 +132,14 @@ def webhook():
         
         if accion == "informacion": 
             datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
-            # if relacionado == "agente":
-            #     datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
-            if item == "":
-                respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
-                respuesta = respuesta + "\n" + "Extension: " + datos["extension"] + " Celular: " + str(datos["codigoarea"]) + str(datos["celular"])
-            else:
-                respuesta = datos
-
+            if datos != "":
+                # if relacionado == "agente":
+                #     datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
+                if item == "":
+                    respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
+                    respuesta = respuesta + "\n" + "Extension: " + datos["extension"] + " Celular: " + str(datos["codigoarea"]) + str(datos["celular"])
+                else:
+                    respuesta = datos
 
         return jsonify(fulfillmentText=respuesta),200
 

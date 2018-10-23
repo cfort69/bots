@@ -1,1 +1,76 @@
-2018-10-18 23:21:44,827 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-22 17:20:19,665 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-22 17:20:31,933 - ERROR - Exception on /webhook [POST]
+Traceback (most recent call last):
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "webhook.py", line 144, in webhook
+    respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
+TypeError: string indices must be integers
+2018-10-22 17:20:31,936 - INFO - 104.198.35.63 - - [22/Oct/2018 17:20:31] "POST /webhook HTTP/1.1" 500 -
+2018-10-22 17:34:15,683 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-22 17:34:27,845 - ERROR - Exception on /webhook [POST]
+Traceback (most recent call last):
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "webhook.py", line 150, in webhook
+    respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
+TypeError: string indices must be integers
+2018-10-22 17:34:27,850 - INFO - 104.198.35.63 - - [22/Oct/2018 17:34:27] "POST /webhook HTTP/1.1" 500 -
+2018-10-23 11:09:39,202 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-23 11:10:16,340 - ERROR - Exception on /webhook [POST]
+Traceback (most recent call last):
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/botsuser/python-venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "webhook.py", line 150, in webhook
+    respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
+TypeError: string indices must be integers
+2018-10-23 11:10:16,343 - INFO - 35.225.240.65 - - [23/Oct/2018 11:10:16] "POST /webhook HTTP/1.1" 500 -
+2018-10-23 11:10:52,970 - INFO - projects/botler-67f0e/agent/sessions/d7174ab6-8743-c24e-ba3a-a884f9921cd8 pidio info sobre: cfort
+2018-10-23 11:10:53,221 - INFO - projects/botler-67f0e/agent/sessions/d7174ab6-8743-c24e-ba3a-a884f9921cd8 informacion encontrada: *Charles Fort*
+DIRECTOR(A) INFORMATICA Y COMUNICACIONES
+cfort@puntacana.com
+Empleado: 1038
+2018-10-23 11:10:53,222 - INFO - 35.202.101.120 - - [23/Oct/2018 11:10:53] "POST /webhook HTTP/1.1" 200 -
+2018-10-23 11:12:17,881 - INFO - 209.17.96.226 - - [23/Oct/2018 11:12:17] "GET / HTTP/1.1" 404 -
+2018-10-23 11:13:37,375 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-23 11:14:20,916 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-23 11:54:17,381 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-23 11:54:38,564 - INFO - 104.198.35.63 - - [23/Oct/2018 11:54:38] "POST /webhook HTTP/1.1" 200 -
+2018-10-23 11:56:48,856 - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2018-10-23 11:57:02,261 - INFO - 35.202.101.120 - - [23/Oct/2018 11:57:02] "POST /webhook HTTP/1.1" 200 -
+2018-10-23 11:57:26,933 - INFO - projects/botler-67f0e/agent/sessions/GCX64GBGA pidio info sobre: cfort
+2018-10-23 11:57:27,156 - INFO - projects/botler-67f0e/agent/sessions/GCX64GBGA informacion encontrada: *Charles Fort*
+DIRECTOR(A) INFORMATICA Y COMUNICACIONES
+cfort@puntacana.com
+Empleado: 1038
+2018-10-23 11:57:27,157 - INFO - 104.198.35.63 - - [23/Oct/2018 11:57:27] "POST /webhook HTTP/1.1" 200 -

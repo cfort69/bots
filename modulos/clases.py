@@ -197,7 +197,6 @@ class helpdesk_db: ## clase para hacer todas las consultas en db del helpdesk ##
         else:
             sql = "SELECT id, user_name, last_name, first_name, email, role FROM users where id = " + str(usuario)
 
-        # print(sql)
         usuario = self.ejecutaSql(sql)
 
         for registro in usuario:
