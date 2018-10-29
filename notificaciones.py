@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.7
 # -*- coding: utf-8 -*- #
 
-import os, json, requests, logging, unidecode, time, re, configparser
+import json, requests, logging, unidecode, configparser
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from datetime import datetime, timedelta
 from slackclient import SlackClient
@@ -45,13 +45,6 @@ RTM_READ_DELAY = 1 # 1 second delay between reading from RTM
 EXAMPLE_COMMAND = "do"
 MENTION_REGEX = "^<@(|[WU].+?)>(.*)"
 
-
-def temp_token():
-    import binascii
-    temp_token = binascii.hexlify(os.urandom(24))
-    return temp_token.decode('utf-8')
-
-
 WEBHOOK_VERIFY_TOKEN = None
 CLIENT_AUTH_TIMEOUT = 24 # in Hours
 
@@ -66,7 +59,7 @@ basic_auth = BasicAuth(app)
 
 def slack_msq(user, mensaje):
     slack_client.rtm_connect(with_team_state=False)
-    starterbot_id = slack_client.api_call("auth.test")["user_id"]
+    # starterbot_id = slack_client.api_call("auth.test")["user_id"]
     usuarios = slack_client.api_call("users.list")
     id_usuario = "UBRA74MQQ"
     # print(json.dumps(slack_client.api_call("channels.list",exclude_archived=1), indent=4, sort_keys=True))
@@ -75,7 +68,7 @@ def slack_msq(user, mensaje):
         if "email" in usuario["profile"]:
             if usuario["profile"]["email"] == user:
                 id_usuario = usuario["id"]
-                if "phone" in usuario["profile"]: telefono = usuario["profile"]["phone"]
+                # if "phone" in usuario["profile"]: telefono = usuario["profile"]["phone"]
 
     slack_client.api_call(
         "chat.postMessage",
@@ -106,7 +99,7 @@ def webhook():
             mensaje = mensaje + "El siguiente ticket te ha sido asignado: \n"
             mensaje = mensaje + cHelpDesk_db.buscaData("ticket", solicitud["ticket[ticket_number]"], "", "", "", relacionado_usuario)
             dummy = slack_msq(relacionado_usuario , mensaje)
-            logging.info('Asignacion del ticket: {}'.format(solicitud["ticket[ticket_number]"]) + " al agente {}".format(relacionado_nombre) + " {}".format(relacionado_apellido))
+            logging.info('Asignacion del ticket: {}'.format(solicitud["ticket[ticket_number]"]) + " al agente {}".format(relacionado_nombre) + " {}".format(relacionado_apellido) + " {}".format(relacionado_id) + " {}".format(relacionado_email) + " {}".format(relacionado_rol))
 
         return jsonify(webhook_ok="Recibido"),200
 

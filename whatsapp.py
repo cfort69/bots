@@ -1,10 +1,5 @@
-import os, sys
-import json
-import unidecode
-import time
-# import dialogflow_v2 as dialogflow
-import requests, logging
-from modulos.clases import helpdesk, ldap, botdialogflow
+import os, sys, json, unidecode, time, requests, logging
+from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from datetime import datetime, timedelta
 from modulos.configuracion import server_helpdesk, usuario_helpdesk, clave_helpdesk, database_helpdesk, api_ldap_server_url, \
     api_ldap_server_port, id_whatsapp_soporte ,dominio_helpdesk, bot_name, \
