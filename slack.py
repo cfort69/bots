@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.7
 # -*- coding: utf-8 -*- #
 
-import unidecode, requests, logging, configparser
+import unidecode, requests, logging, configparser, re, time
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from slackclient import SlackClient
 from modulos.decrypt import desencripta
@@ -26,8 +26,8 @@ eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
 dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
 main_token = str(config["TOKENS"]["main_token"])
 
-slack_bot_token = desencripta(main_token, eslack_bot_token)
-dialogflow_token = desencripta(main_token, edialogflow_token)
+slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
+dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)

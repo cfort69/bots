@@ -70,3 +70,7 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='slack.com', port=
 2018-10-23 11:57:25,756 - INFO - Mensaje recibido de :GCX64GBGA muestrame informacion sobre el agente cfort
 2018-10-23 11:57:25,758 - INFO - Sesion dialogflow: projects/botler-67f0e/agent/sessions/GCX64GBGA
 2018-10-23 11:57:27,254 - INFO - Respuesta: b'*Charles Fort*\nDIRECTOR(A) INFORMATICA Y COMUNICACIONES\ncfort@puntacana.com\nEmpleado: 1038\nExtension: 4301 Celular: 18092223100'
+2018-10-29 11:30:01,393 - INFO - Botler Slack Iniciando....
+2018-10-29 11:30:03,582 - INFO - Botler Conectado!
+2018-10-29 11:32:00,543 - INFO - Botler Slack Iniciando....
+2018-10-29 11:32:02,468 - INFO - Botler Conectado!
