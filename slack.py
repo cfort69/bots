@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.7
 # -*- coding: utf-8 -*- #
 
-import os, json, unidecode, time, re, sys, requests, logging, configparser
+import unidecode, requests, logging, configparser
 from modulos.clases import helpdesk_db, ldap, botdialogflow, helpdesk_api
 from slackclient import SlackClient
 from modulos.decrypt import desencripta
@@ -26,8 +26,8 @@ eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
 dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
 main_token = str(config["TOKENS"]["main_token"])
 
-slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
-dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
+slack_bot_token = desencripta(main_token, eslack_bot_token)
+dialogflow_token = desencripta(main_token, edialogflow_token)
 
 # instantiate Slack client
 slack_client = SlackClient(slack_bot_token)
@@ -72,52 +72,34 @@ def parse_direct_mention(message_text):
     # the first group contains the username, the second group contains the remaining message
     return (matches.group(1), matches.group(2).strip()) if matches else (None, None)
 
-def handle_command(mensaje, channel, email, nombre, apellido):
-    """
-        Executes bot command if the command is known
-    """
-    # Default response is help text for the user
-    # default_response = "Not sure what you mean. Try *{}*.".format(EXAMPLE_COMMAND)
-
-    # Finds and executes the given command, filling in response
-    response = None
-    # This is where you start to implement more commands!
-
-    # texto = mensaje.encode('utf-8') + " " + email.encode('utf-8')
-    # usuario = email.find("@")
-    # texto = mensaje + " " + email
-    # print(mensaje)
-
-    logging.info('Mensaje recibido de :{}'.format(channel) + ' {}'.format(mensaje))
-
-    response = cBotDialogflow.buscaIntent(channel, mensaje, email)
-
-    logging.info('Respuesta: {}'.format(response.encode('utf-8')))
-
-    # if command.startswith(EXAMPLE_COMMAND):
-    #     response = "Sure...write some more code then I can do that!"
-
-    # Sends the response back to the channel
-    slack_client.api_call(
-        "chat.postMessage",
-        channel=channel,
-        text=response
-    )
+# def handle_command(mensaje, channel, email, nombre, apellido):
+#     response = None
+#     logging.info('Mensaje recibido de :{}'.format(channel) + ' {}'.format(mensaje))
+#     response = cBotDialogflow.buscaIntent(channel, mensaje, email)
+#     logging.info('Respuesta: {}'.format(response.encode('utf-8')))
+#     slack_client.api_call(
+#         "chat.postMessage",
+#         channel=channel,
+#         text=response
+#     )
 
 
 if __name__ == "__main__":
     if slack_client.rtm_connect(with_team_state=False):
-        print("Botler Conectado!")
-        # Read bot's user ID by calling Web API method `auth.test`
+        logging.info("Botler Conectado!")
         starterbot_id = slack_client.api_call("auth.test")["user_id"]
         usuarios = slack_client.api_call("users.list")
         while True:
-            # print(slack_client.rtm_read())
-
             mensaje, channel, usuario, nombrecompleto, nombre, apellido, email, telefono = parse_bot_commands(slack_client.rtm_read(), usuarios)
             if mensaje:
-                handle_command(mensaje, channel, email, nombre, apellido)
+                # handle_command(mensaje, channel, email, nombre, apellido)
+                response = None
+                logging.info('Mensaje recibido de :{}'.format(channel) + ' {}'.format(mensaje))
+                response = cBotDialogflow.buscaIntent(channel, mensaje, email)
+                logging.info('Respuesta: {}'.format(response.encode('utf-8')))
+                slack_client.api_call("chat.postMessage", channel=channel, text=response)
+
             time.sleep(RTM_READ_DELAY)
     else:
-        print("Fallo la coneccion con Slack.")
+        logging.info("Fallo la coneccion con Slack.")
 
