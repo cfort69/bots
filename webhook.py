@@ -1,6 +1,5 @@
 import os, json,requests, logging, configparser
 from urllib.parse import parse_qs
-
 from modulos.clases import helpdesk_db, helpdesk_api, ldap
 from datetime import datetime, timedelta
 from flask import Flask, request, abort, jsonify
