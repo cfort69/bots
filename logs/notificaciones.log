@@ -1,0 +1,205 @@
+2018-10-29 12:52:59,187 - INFO - Faveo Notifiaciones Iniciando....
+2018-10-29 12:52:59,195 - INFO -  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2018-10-29 12:53:19,752 - INFO - Faveo Notifiaciones Iniciando....
+2018-10-29 12:53:19,760 - INFO -  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2018-10-29 12:57:54,839 - INFO - 87.4.5.139 - - [29/Oct/2018 12:57:54] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 12:58:27,813 - INFO - Asignacion del ticket: N015627 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-29 12:58:27,814 - INFO - 87.4.5.139 - - [29/Oct/2018 12:58:27] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 12:59:40,031 - INFO - 87.4.5.139 - - [29/Oct/2018 12:59:40] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:02:24,972 - INFO - Asignacion del ticket: N015743 al agente RUBEN TINEO MORONTA 3810 rtineo@puntacana.com agent
+2018-10-29 13:02:24,973 - INFO - 87.4.5.139 - - [29/Oct/2018 13:02:24] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:04:05,756 - INFO - 87.4.5.139 - - [29/Oct/2018 13:04:05] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:04:14,683 - INFO - 87.4.5.139 - - [29/Oct/2018 13:04:14] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:05:32,449 - INFO - Asignacion del ticket: N015743 al agente Staling Marmolejos 4495 smarmolejos@puntacana.com agent
+2018-10-29 13:05:32,450 - INFO - 87.4.5.139 - - [29/Oct/2018 13:05:32] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:17:30,079 - INFO - 87.4.5.139 - - [29/Oct/2018 13:17:30] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:17:35,772 - INFO - 87.4.5.139 - - [29/Oct/2018 13:17:35] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:17:37,629 - INFO - 87.4.5.139 - - [29/Oct/2018 13:17:37] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:28:22,543 - INFO - Asignacion del ticket: N015627 al agente LENIN ADAMES ROJAS 4833 ladames@puntacana.com agent
+2018-10-29 13:28:22,544 - INFO - 87.4.5.139 - - [29/Oct/2018 13:28:22] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:28:36,003 - INFO - 87.4.5.139 - - [29/Oct/2018 13:28:36] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:34:17,770 - INFO - 87.4.5.139 - - [29/Oct/2018 13:34:17] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:34:20,195 - INFO - 87.4.5.139 - - [29/Oct/2018 13:34:20] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:35:31,495 - INFO - 87.4.5.139 - - [29/Oct/2018 13:35:31] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:36:27,634 - INFO - 87.4.5.139 - - [29/Oct/2018 13:36:27] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:36:30,059 - INFO - 87.4.5.139 - - [29/Oct/2018 13:36:30] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:42:40,803 - INFO - 87.4.5.139 - - [29/Oct/2018 13:42:40] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 13:47:47,155 - INFO - Asignacion del ticket: N015745 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 13:47:47,156 - INFO - 87.4.5.139 - - [29/Oct/2018 13:47:47] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 14:15:26,317 - INFO - 87.4.5.139 - - [29/Oct/2018 14:15:26] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 14:16:54,893 - INFO - 87.4.5.139 - - [29/Oct/2018 14:16:54] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 14:17:10,547 - INFO - 87.4.5.139 - - [29/Oct/2018 14:17:10] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:29:42,680 - INFO - Asignacion del ticket: N015753 al agente Staling Marmolejos 4495 smarmolejos@puntacana.com agent
+2018-10-29 15:29:42,681 - INFO - 87.4.5.139 - - [29/Oct/2018 15:29:42] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:30:21,913 - INFO - 87.4.5.139 - - [29/Oct/2018 15:30:21] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:30:47,552 - INFO - Asignacion del ticket: N015752 al agente LENIN ADAMES ROJAS 4833 ladames@puntacana.com agent
+2018-10-29 15:30:47,552 - INFO - 87.4.5.139 - - [29/Oct/2018 15:30:47] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:32:06,764 - INFO - 87.4.5.139 - - [29/Oct/2018 15:32:06] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:45:49,204 - INFO - 87.4.5.139 - - [29/Oct/2018 15:45:49] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:50:09,375 - INFO - 87.4.5.139 - - [29/Oct/2018 15:50:09] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:50:09,993 - INFO - 87.4.5.139 - - [29/Oct/2018 15:50:09] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:53:32,924 - INFO - 87.4.5.139 - - [29/Oct/2018 15:53:32] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:54:46,087 - INFO - 87.4.5.139 - - [29/Oct/2018 15:54:46] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 15:59:29,714 - INFO - Asignacion del ticket: N015749 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 15:59:29,715 - INFO - 87.4.5.139 - - [29/Oct/2018 15:59:29] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:08:39,547 - INFO - 87.4.5.139 - - [29/Oct/2018 16:08:39] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:08:40,307 - INFO - 87.4.5.139 - - [29/Oct/2018 16:08:40] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:08:43,843 - INFO - 87.4.5.139 - - [29/Oct/2018 16:08:43] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:08:44,318 - INFO - 87.4.5.139 - - [29/Oct/2018 16:08:44] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:12:48,122 - INFO - Asignacion del ticket: N015746 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 16:12:48,123 - INFO - 87.4.5.139 - - [29/Oct/2018 16:12:48] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:13:06,619 - INFO - Asignacion del ticket: N015755 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-29 16:13:06,620 - INFO - 87.4.5.139 - - [29/Oct/2018 16:13:06] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:13:43,681 - INFO - Asignacion del ticket: N015747 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 16:13:43,682 - INFO - 87.4.5.139 - - [29/Oct/2018 16:13:43] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:13:47,934 - INFO - Asignacion del ticket: N015750 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 16:13:47,935 - INFO - 87.4.5.139 - - [29/Oct/2018 16:13:47] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:14:36,815 - INFO - Asignacion del ticket: N015748 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-29 16:14:36,816 - INFO - 87.4.5.139 - - [29/Oct/2018 16:14:36] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:15:26,400 - INFO - Asignacion del ticket: N015751 al agente ELIEZER MARTINEZ SOLER 4421 esoler@puntacana.com agent
+2018-10-29 16:15:26,401 - INFO - 87.4.5.139 - - [29/Oct/2018 16:15:26] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:16:30,696 - INFO - Asignacion del ticket: N015754 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-29 16:16:30,697 - INFO - 87.4.5.139 - - [29/Oct/2018 16:16:30] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:23:15,252 - INFO - 87.4.5.139 - - [29/Oct/2018 16:23:15] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:23:39,934 - INFO - Asignacion del ticket: N015757 al agente RUBEN TINEO MORONTA 3810 rtineo@puntacana.com agent
+2018-10-29 16:23:39,935 - INFO - 87.4.5.139 - - [29/Oct/2018 16:23:39] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:24:16,541 - INFO - 87.4.5.139 - - [29/Oct/2018 16:24:16] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:24:17,606 - INFO - 87.4.5.139 - - [29/Oct/2018 16:24:17] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:25:36,619 - INFO - 87.4.5.139 - - [29/Oct/2018 16:25:36] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:26:07,188 - INFO - 87.4.5.139 - - [29/Oct/2018 16:26:07] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:26:08,285 - INFO - 87.4.5.139 - - [29/Oct/2018 16:26:08] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:26:28,167 - INFO - 87.4.5.139 - - [29/Oct/2018 16:26:28] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:26:36,645 - INFO - 87.4.5.139 - - [29/Oct/2018 16:26:36] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:30:11,502 - INFO - 87.4.5.139 - - [29/Oct/2018 16:30:11] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:32:17,622 - INFO - 87.4.5.139 - - [29/Oct/2018 16:32:17] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:32:28,192 - INFO - 87.4.5.139 - - [29/Oct/2018 16:32:28] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:32:29,216 - INFO - 87.4.5.139 - - [29/Oct/2018 16:32:29] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:35:13,587 - INFO - Asignacion del ticket: N015756 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-29 16:35:13,588 - INFO - 87.4.5.139 - - [29/Oct/2018 16:35:13] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:36:19,586 - INFO - 87.4.5.139 - - [29/Oct/2018 16:36:19] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:42:18,171 - INFO - 87.4.5.139 - - [29/Oct/2018 16:42:18] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:48:58,436 - INFO - 87.4.5.139 - - [29/Oct/2018 16:48:58] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:49:11,863 - INFO - 87.4.5.139 - - [29/Oct/2018 16:49:11] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:50:05,179 - INFO - Asignacion del ticket: N015759 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 16:50:05,180 - INFO - 87.4.5.139 - - [29/Oct/2018 16:50:05] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:51:19,848 - INFO - 87.4.5.139 - - [29/Oct/2018 16:51:19] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:54:04,565 - INFO - 87.4.5.139 - - [29/Oct/2018 16:54:04] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:55:23,565 - INFO - 87.4.5.139 - - [29/Oct/2018 16:55:23] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:55:53,401 - INFO - 87.4.5.139 - - [29/Oct/2018 16:55:53] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:56:03,568 - INFO - 87.4.5.139 - - [29/Oct/2018 16:56:03] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:56:29,300 - INFO - 87.4.5.139 - - [29/Oct/2018 16:56:29] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:56:38,904 - INFO - 87.4.5.139 - - [29/Oct/2018 16:56:38] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:57:57,004 - INFO - 87.4.5.139 - - [29/Oct/2018 16:57:57] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:58:17,573 - INFO - 87.4.5.139 - - [29/Oct/2018 16:58:17] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:59:01,395 - INFO - 87.4.5.139 - - [29/Oct/2018 16:59:01] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 16:59:11,587 - INFO - 87.4.5.139 - - [29/Oct/2018 16:59:11] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:03:32,890 - INFO - 87.4.5.139 - - [29/Oct/2018 17:03:32] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:04:47,251 - INFO - 87.4.5.139 - - [29/Oct/2018 17:04:47] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:09:41,667 - INFO - 87.4.5.139 - - [29/Oct/2018 17:09:41] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:10:46,725 - INFO - 87.4.5.139 - - [29/Oct/2018 17:10:46] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:12:21,384 - INFO - 87.4.5.139 - - [29/Oct/2018 17:12:21] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:12:51,310 - INFO - 87.4.5.139 - - [29/Oct/2018 17:12:51] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:12:52,164 - INFO - 87.4.5.139 - - [29/Oct/2018 17:12:52] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:12:53,167 - INFO - 87.4.5.139 - - [29/Oct/2018 17:12:53] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:14:53,774 - INFO - 87.4.5.139 - - [29/Oct/2018 17:14:53] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:15:45,879 - INFO - Asignacion del ticket: N015761 al agente MARIA DEL PILAR TEJEDA CASTILLO 3094 mdtejeda@puntacana.com agent
+2018-10-29 17:15:45,880 - INFO - 87.4.5.139 - - [29/Oct/2018 17:15:45] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:18:29,135 - INFO - Asignacion del ticket: N015762 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-29 17:18:29,136 - INFO - 87.4.5.139 - - [29/Oct/2018 17:18:29] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 17:41:29,805 - INFO - Asignacion del ticket: N015763 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 17:41:29,807 - INFO - 87.4.5.139 - - [29/Oct/2018 17:41:29] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 18:23:00,917 - INFO - Asignacion del ticket: N015764 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-29 18:23:00,919 - INFO - 87.4.5.139 - - [29/Oct/2018 18:23:00] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 18:26:28,080 - INFO - Asignacion del ticket: N015765 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-29 18:26:28,081 - INFO - 87.4.5.139 - - [29/Oct/2018 18:26:28] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 19:33:48,732 - INFO - 87.4.5.139 - - [29/Oct/2018 19:33:48] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 19:34:44,556 - INFO - Asignacion del ticket: N015768 al agente MARIA DEL PILAR TEJEDA CASTILLO 3094 mdtejeda@puntacana.com agent
+2018-10-29 19:34:44,557 - INFO - 87.4.5.139 - - [29/Oct/2018 19:34:44] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 22:01:05,156 - INFO - Asignacion del ticket: N015766 al agente DIEGO RODRIGUEZ GUERRERO 4681 drodriguez@puntacana.com agent
+2018-10-29 22:01:05,158 - INFO - 87.4.5.139 - - [29/Oct/2018 22:01:05] "POST /webhook HTTP/1.1" 200 -
+2018-10-29 22:01:05,420 - INFO - 87.4.5.139 - - [29/Oct/2018 22:01:05] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 06:53:40,136 - INFO - 87.4.5.139 - - [30/Oct/2018 06:53:40] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 06:58:46,849 - INFO - Asignacion del ticket: N015773 al agente LENIN ADAMES ROJAS 4833 ladames@puntacana.com agent
+2018-10-30 06:58:46,850 - INFO - 87.4.5.139 - - [30/Oct/2018 06:58:46] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 06:58:47,262 - INFO - 87.4.5.139 - - [30/Oct/2018 06:58:47] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 08:34:27,357 - INFO - 87.4.5.139 - - [30/Oct/2018 08:34:27] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 08:47:29,386 - INFO - 87.4.5.139 - - [30/Oct/2018 08:47:29] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 08:48:07,110 - INFO - 87.4.5.139 - - [30/Oct/2018 08:48:07] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:01:50,836 - INFO - Asignacion del ticket: N015775 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:01:50,837 - INFO - 87.4.5.139 - - [30/Oct/2018 09:01:50] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:03:51,684 - INFO - Asignacion del ticket: N015770 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:03:51,685 - INFO - 87.4.5.139 - - [30/Oct/2018 09:03:51] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:03:54,016 - INFO - Asignacion del ticket: N015778 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-30 09:03:54,017 - INFO - 87.4.5.139 - - [30/Oct/2018 09:03:54] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:04:00,258 - INFO - Asignacion del ticket: N015769 al agente JUNIOR VASQUEZ 4494 jvasquez@puntacana.com agent
+2018-10-30 09:04:00,259 - INFO - 87.4.5.139 - - [30/Oct/2018 09:04:00] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:04:57,380 - INFO - Asignacion del ticket: N015774 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 09:04:57,381 - INFO - 87.4.5.139 - - [30/Oct/2018 09:04:57] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:05:28,674 - INFO - Asignacion del ticket: N015767 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:05:28,675 - INFO - 87.4.5.139 - - [30/Oct/2018 09:05:28] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:05:41,811 - INFO - Asignacion del ticket: N015777 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:05:41,812 - INFO - 87.4.5.139 - - [30/Oct/2018 09:05:41] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:06:14,740 - INFO - Asignacion del ticket: N015776 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-30 09:06:14,741 - INFO - 87.4.5.139 - - [30/Oct/2018 09:06:14] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:06:20,324 - INFO - Asignacion del ticket: N015779 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-30 09:06:20,326 - INFO - 87.4.5.139 - - [30/Oct/2018 09:06:20] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:07:18,187 - INFO - Asignacion del ticket: N015780 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-30 09:07:18,188 - INFO - 87.4.5.139 - - [30/Oct/2018 09:07:18] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:37:36,353 - INFO - 87.4.5.139 - - [30/Oct/2018 09:37:36] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:37:36,742 - INFO - 87.4.5.139 - - [30/Oct/2018 09:37:36] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:39:08,516 - INFO - 87.4.5.139 - - [30/Oct/2018 09:39:08] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:39:48,644 - INFO - 87.4.5.139 - - [30/Oct/2018 09:39:48] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:39:49,140 - INFO - 87.4.5.139 - - [30/Oct/2018 09:39:49] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:40:27,938 - INFO - 87.4.5.139 - - [30/Oct/2018 09:40:27] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:45:26,575 - INFO - Asignacion del ticket: N015722 al agente VICTOR VALDEZ GERONIMO 4496 vvaldez@puntacana.com agent
+2018-10-30 09:45:26,576 - INFO - 87.4.5.139 - - [30/Oct/2018 09:45:26] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:45:59,986 - INFO - Asignacion del ticket: N015784 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 09:45:59,987 - INFO - 87.4.5.139 - - [30/Oct/2018 09:45:59] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:46:15,287 - INFO - Asignacion del ticket: N015783 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:46:15,288 - INFO - 87.4.5.139 - - [30/Oct/2018 09:46:15] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:46:54,112 - INFO - Asignacion del ticket: N015785 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 09:46:54,113 - INFO - 87.4.5.139 - - [30/Oct/2018 09:46:54] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:47:47,876 - INFO - Asignacion del ticket: N015781 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 09:47:47,877 - INFO - 87.4.5.139 - - [30/Oct/2018 09:47:47] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:48:31,084 - INFO - Asignacion del ticket: N015782 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:48:31,085 - INFO - 87.4.5.139 - - [30/Oct/2018 09:48:31] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:49:16,404 - INFO - Asignacion del ticket: N015786 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 09:49:16,405 - INFO - 87.4.5.139 - - [30/Oct/2018 09:49:16] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:53:24,769 - INFO - 87.4.5.139 - - [30/Oct/2018 09:53:24] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:53:55,794 - INFO - 87.4.5.139 - - [30/Oct/2018 09:53:55] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:54:08,232 - INFO - 87.4.5.139 - - [30/Oct/2018 09:54:08] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:56:00,999 - INFO - Asignacion del ticket: N015784 al agente ANTONIO SUAREZ 3498 asuarez@puntacana.com agent
+2018-10-30 09:56:01,000 - INFO - 87.4.5.139 - - [30/Oct/2018 09:56:01] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:56:20,215 - INFO - 87.4.5.139 - - [30/Oct/2018 09:56:20] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:58:39,603 - INFO - Asignacion del ticket: N015788 al agente LENIN ADAMES ROJAS 4833 ladames@puntacana.com agent
+2018-10-30 09:58:39,604 - INFO - 87.4.5.139 - - [30/Oct/2018 09:58:39] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 09:58:39,855 - INFO - 87.4.5.139 - - [30/Oct/2018 09:58:39] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:04:30,829 - INFO - Asignacion del ticket: N015778 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 10:04:30,831 - INFO - 87.4.5.139 - - [30/Oct/2018 10:04:30] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:04:55,161 - INFO - Asignacion del ticket: N015787 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 10:04:55,162 - INFO - 87.4.5.139 - - [30/Oct/2018 10:04:55] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:05:05,916 - INFO - Asignacion del ticket: N015780 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 10:05:05,917 - INFO - 87.4.5.139 - - [30/Oct/2018 10:05:05] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:06:23,870 - INFO - Asignacion del ticket: N015776 al agente LENIN ADAMES ROJAS 4833 ladames@puntacana.com agent
+2018-10-30 10:06:23,871 - INFO - 87.4.5.139 - - [30/Oct/2018 10:06:23] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:09:00,880 - INFO - Asignacion del ticket: N015789 al agente ADRIAN MERCEDES CORDERO 3500 aamercedes@puntacana.com agent
+2018-10-30 10:09:00,881 - INFO - 87.4.5.139 - - [30/Oct/2018 10:09:00] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:18:52,665 - INFO - Asignacion del ticket: N015789 al agente JOANGEL RODRIGUEZ CANELA 3877 jcanela@puntacana.com agent
+2018-10-30 10:18:52,666 - INFO - 87.4.5.139 - - [30/Oct/2018 10:18:52] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:19:22,281 - INFO - 87.4.5.139 - - [30/Oct/2018 10:19:22] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:19:23,157 - INFO - 87.4.5.139 - - [30/Oct/2018 10:19:23] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:19:23,981 - INFO - 87.4.5.139 - - [30/Oct/2018 10:19:23] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:20:00,877 - INFO - 87.4.5.139 - - [30/Oct/2018 10:20:00] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:21:03,488 - INFO - 87.4.5.139 - - [30/Oct/2018 10:21:03] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:24:33,705 - INFO - Asignacion del ticket: N015790 al agente LENIN ADAMES ROJAS 4833 ladames@puntacana.com agent
+2018-10-30 10:24:33,706 - INFO - 87.4.5.139 - - [30/Oct/2018 10:24:33] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:24:34,025 - INFO - 87.4.5.139 - - [30/Oct/2018 10:24:34] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:31:56,640 - INFO - Asignacion del ticket: N015791 al agente Staling Marmolejos 4495 smarmolejos@puntacana.com agent
+2018-10-30 10:31:56,641 - INFO - 87.4.5.139 - - [30/Oct/2018 10:31:56] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:34:16,502 - INFO - 87.4.5.139 - - [30/Oct/2018 10:34:16] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:35:49,514 - INFO - 87.4.5.139 - - [30/Oct/2018 10:35:49] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:58:45,521 - INFO - 87.4.5.139 - - [30/Oct/2018 10:58:45] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 10:59:42,289 - INFO - Asignacion del ticket: N015792 al agente JOSE GARCIA   3523 jgarcia@puntacana.com agent
+2018-10-30 10:59:42,290 - INFO - 87.4.5.139 - - [30/Oct/2018 10:59:42] "POST /webhook HTTP/1.1" 200 -
+2018-10-30 11:00:12,394 - INFO - Asignacion del ticket: N015793 al agente ELIEZER MARTINEZ SOLER 4421 esoler@puntacana.com agent
+2018-10-30 11:00:12,395 - INFO - 87.4.5.139 - - [30/Oct/2018 11:00:12] "POST /webhook HTTP/1.1" 200 -

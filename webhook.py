@@ -139,7 +139,7 @@ def webhook():
                     respuesta = respuesta + "\n" + "Extension: " + datos["extension"] + " Celular: " + str(datos["codigoarea"]) + str(datos["celular"])
                 else:
                     respuesta = datos
-
+        print(respuesta)
         return jsonify(fulfillmentText=respuesta),200
 
             # logging.info('Sesion addr: {}'.format(request.remote_addr) + ' {}'.format(respuesta))
