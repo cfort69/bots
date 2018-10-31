@@ -1,5 +1,6 @@
 import configparser
 from sqlalchemy import or_
+from modulos.decrypt import desencripta
 from modulos.modelo import Ticket
 from modulos.modelo import User
 from modulos.modelo import TicketThread
@@ -8,7 +9,7 @@ from modulos.base import Session
 session = Session()
 
 config = configparser.ConfigParser()
-config.read("../configuracion.ini")
+config.read("configuracion.ini")
 
 # usuario_hd = str(config["HELPDESK"]["usuario_hd"])
 # clave_hd = str(config["HELPDESK"]["clave_hd"])
@@ -34,8 +35,18 @@ def buscaUsuario(usuario):
     if "@" in usuario:
         resultado = session.query(User).filter(User.user_name == usuario).first()
     else:
-        resultado = session.query(User).filter(User.id == str(usuario).first()
+        resultado = session.query(User).filter(User.id == str(usuario)).first()
+    
+    # for registro in resultado:
+    #     relacionado_id = registro.id
+    #     relacionado_usuario = registro.user_name
+    #     relacionado_nombre = registro.first_name
+    #     relacionado_apellido = registro.last_name
+    #     relacionado_email = registro.email
+    #     relacionado_rol = registro.role
+
     return resultado.id, resultado.user_name, resultado.first_name, resultado.last_name, resultado.email, resultado.role
+    # return relacionado_id, relacionado_usuario, relacionado_nombre, relacionado_apellido, relacionado_email, relacionado_rol
 
 def buscaData(item, dato, estado, relacionado, condicion, usuario):
     # resultado = []
@@ -135,7 +146,7 @@ def buscaData(item, dato, estado, relacionado, condicion, usuario):
 
                     if registro.assigned_to != None: 
                         resultado = resultado + "----------------------*Asignado A*----------------------" + "\n"
-                        resultado = resultado + "*{}".format(registro.dept.name]) + "*" + "\n"
+                        resultado = resultado + "*{}".format(registro.dept.name) + "*" + "\n"
                         resultado = resultado + "*Agente:* {}".format(registro.user1.first_name) + " {}".format(registro.user1.last_name) + "\n"
                         resultado = resultado + "{}".format(registro.user1.email) + "\n" 
 

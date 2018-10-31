@@ -1805,7 +1805,7 @@ class TemplateType(Base):
     updated_at = Column(DateTime)
 
 
-class Template(Base):
+class Templates(Base):
     __tablename__ = 'templates'
 
     id = Column(Integer, primary_key=True)

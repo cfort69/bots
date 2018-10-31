@@ -4,7 +4,7 @@ from modulos.clases import ldap
 from datetime import datetime, timedelta
 from flask import Flask, request, abort, jsonify
 from flask_basicauth import BasicAuth
-from modulos.decrypt import desencripta
+# from modulos.decrypt import desencripta
 from modulos.funciones import buscaData
 
 logging.basicConfig(filename='logs/webhook.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
