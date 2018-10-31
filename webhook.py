@@ -1,33 +1,11 @@
-import os, json,requests, logging, configparser
+import os, json,requests, logging
 from urllib.parse import parse_qs
-from modulos.clases import helpdesk_db, helpdesk_api, ldap
+from modulos.clases import ldap
 from datetime import datetime, timedelta
 from flask import Flask, request, abort, jsonify
 from flask_basicauth import BasicAuth
 from modulos.decrypt import desencripta
-
-config = configparser.ConfigParser()
-config.read("configuracion.ini")
-
-usuario_hd = str(config["HELPDESK"]["usuario_hd"])
-clave_hd = str(config["HELPDESK"]["clave_hd"])
-server_db = str(config["HELPDESK"]["server_db"])
-usuario_db = str(config["HELPDESK"]["usuario_db"])
-clave_db = str(config["HELPDESK"]["clave_db"])
-dominio_helpdesk = str(config["HELPDESK"]["dominio_helpdesk"])
-database_helpdesk = str(config["HELPDESK"]["database"])
-api_ldap_server_url = str(config["API"]["ldap_url"])
-api_ldap_server_port = str(config["API"]["ldap_port"])
-api_helpdesk_url = str(config["API"]["helpdeskV1_url"])
-apiv2_helpdesk_url = str(config["API"]["helpdeskV2_url"])
-api_helpdesk_url_authenticate = str(config["API"]["helpdesk_authenticate"])
-edialogflow_token = str(config["TOKENS"]["dialogflow_token"])
-eslack_bot_token = str(config["TOKENS"]["slack_bot_token"])
-dialogflow_project = str(config["TOKENS"]["dialogflow_project"])
-main_token = str(config["TOKENS"]["main_token"])
-
-slack_bot_token = desencripta(main_token, eslack_bot_token).decode('utf-8')
-dialogflow_token = desencripta(main_token, edialogflow_token).decode('utf-8')
+from modulos.funciones import buscaData
 
 logging.basicConfig(filename='logs/webhook.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -35,8 +13,8 @@ logging.basicConfig(filename='logs/webhook.log', level=logging.INFO, format='%(a
 # CLIENT_AUTH_TIMEOUT = 24 # in Hours
 
 app = Flask(__name__)
-cHelpDesk_db = helpdesk_db(server=server_db,usuario=usuario_db,clave=clave_db,database=database_helpdesk, dominio=dominio_helpdesk)
-cLdap = ldap(server=api_ldap_server_url,port=api_ldap_server_port)
+# cHelpDesk_db = helpdesk_db(server=server_db,usuario=usuario_db,clave=clave_db,database=database_helpdesk, dominio=dominio_helpdesk)
+# cLdap = ldap(server=api_ldap_server_url,port=api_ldap_server_port)
 
 authorised_clients = {}
 
@@ -125,18 +103,19 @@ def webhook():
         # respuesta = cHelpDesk_db.buscaData(item, dato, estado, persona)
         # print(respuesta)
 
-        if accion == "desbloqueo":
-            datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
-            respuesta = cLdap.desbloqueaUsuario(dato, datos["nombre"], datos["apellido"], session)
+        # if accion == "desbloqueo":
+        #     datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
+        #     respuesta = cLdap.desbloqueaUsuario(dato, datos["nombre"], datos["apellido"], session)
         
         if accion == "informacion": 
-            datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
+            datos = buscaData(item, dato, estado, relacionado, condicion, usuario)
             if datos != "":
                 # if relacionado == "agente":
                 #     datos = cHelpDesk_db.buscaData(item, dato, estado, relacionado, condicion, usuario)
                 if item == "":
-                    respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
-                    respuesta = respuesta + "\n" + "Extension: " + datos["extension"] + " Celular: " + str(datos["codigoarea"]) + str(datos["celular"])
+                    # respuesta = cLdap.infoUsuario(dato, datos["nombre"], datos["apellido"], session)
+                    # respuesta = respuesta + "\n" + "Extension: " + datos["extension"] + " Celular: " + str(datos["codigoarea"]) + str(datos["celular"])
+                    respuesta = "datos de usuario"
                 else:
                     respuesta = datos
 
