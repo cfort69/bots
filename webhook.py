@@ -118,7 +118,7 @@ def webhook():
                     respuesta = "datos de usuario"
                 else:
                     respuesta = datos
-
+        print(respuesta)
         return jsonify(fulfillmentText=respuesta),200
 
             # logging.info('Sesion addr: {}'.format(request.remote_addr) + ' {}'.format(respuesta))

@@ -87,6 +87,7 @@ def parse_direct_mention(message_text):
 if __name__ == "__main__":
     if slack_client.rtm_connect(with_team_state=False):
         logging.info("Botler Conectado!")
+        print("conectado!")
         starterbot_id = slack_client.api_call("auth.test")["user_id"]
         usuarios = slack_client.api_call("users.list")
         while True:
@@ -95,9 +96,11 @@ if __name__ == "__main__":
                 # handle_command(mensaje, channel, email, nombre, apellido)
                 response = None
                 logging.info('Mensaje recibido de :{}'.format(channel) + ' {}'.format(mensaje))
+                print('Mensaje recibido de :{}'.format(channel) + ' {}'.format(mensaje))
                 response = cBotDialogflow.buscaIntent(channel, mensaje, email)
                 logging.info('Respuesta: {}'.format(response.encode('utf-8')))
-                slack_client.api_call("chat.postMessage", channel=channel, text=response)
+                print('Respuesta: {}'.format(response.encode('utf-8')))
+                slack_client.api_call("chat.postMessage", channel=channel, text=response.encode('utf-8'))
 
             time.sleep(RTM_READ_DELAY)
     else:
